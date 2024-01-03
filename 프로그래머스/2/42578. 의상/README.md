@@ -21,4 +21,5 @@
 1. iterator는 map::iterator가 아닌 map<자료형>::iterator 혹은 auto로 선언
 2. java의 set처럼, insert 시 이미 key가 존재할 경우 덮어씌워지는 것이 아니라 오류 발생
 때문에 erase 후 insert 해야 함
-4. m[key]=value 형태로 map에 원소 삽입 가능
+3. m[key]=value 형태로 map에 원소 삽입 가능
+4. iterator 사용 시 . 가 아닌 ->로 멤버 참조
