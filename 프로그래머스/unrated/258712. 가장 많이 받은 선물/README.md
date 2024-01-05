@@ -23,3 +23,5 @@
 다른 방법: <sstream>을 헤더에 추가하여
 stringstream(parse(문자열)); 후 parse>>부분문자열1>>부분문자열2;
 2. map[key]=value 문법 잘 이용하기! find 쓰면 iterator 처리해야 돼서 번거로움
+3. 벡터 내 최댓값 sort 후 첫 번째 이용하지 않고, *max_element(v.begin(),v.end())로 구하기
+4. 
