@@ -22,7 +22,8 @@ int solution(vector<string> maps) {
     }
     queue<pair<pair<int,int>,pair<int,int>>> q;
     q.push({{startr,startc},{0,0}});
-    int visited[101][101][2]={0,};
+    int visited[101][101][2];
+    memset(visited,0,sizeof(visited));
     visited[startr][startc][0]=true;
     while(!q.empty()){
         int r=q.front().first.first;
