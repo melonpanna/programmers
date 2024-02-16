@@ -6,7 +6,7 @@
 #define MAX_N 18
 using namespace std;
 int answer=0;
-vector<vector<int>> adj;//부모 뒤에 자식을 붙임
+vector<vector<int>> adj;//양방향 연결로 바꿈
 bool visited[MAX_N][MAX_N][MAX_N];
 int sheep=0,wolf=0;
 void dfs(int node,vector<int> info){
