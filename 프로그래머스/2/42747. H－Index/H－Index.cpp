@@ -23,13 +23,8 @@ int solution(vector<int> citations) {
             high=mid-1;
         }
         else{
-            if(mid>(citations.size()-index)){
-                high=mid-1;
-            }
-            else{
-                answer=max(answer,mid);
-                low=mid+1;
-            }
+            answer=max(answer,mid);
+            low=mid+1;
         }
         mid=(low+high)/2;
     }
