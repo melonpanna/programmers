@@ -16,12 +16,11 @@ vector<vector<int>> solution(vector<vector<int>> data, string ext, int val_ext, 
     m["date"]=1;
     m["maximum"]=2;
     m["remain"]=3;
-    //추출-java에서는 stream으로 가능하려나
     for(int i=0;i<data.size();i++){
         if(data[i][m[ext]]<val_ext)answer.push_back(data[i]);
     }
     sort(answer.begin(), answer.end(), [&](const auto& a, const auto& b) {
-        return cmp(a, b, m[sort_by]); // 오름차순으로 정렬
+        return cmp(a, b, m[sort_by]);
     });
     return answer;
 }
