@@ -17,15 +17,8 @@ vector<string> solution(vector<string> players, vector<string> callings) {
     }
     for(string s:callings){
         int temp=m[s];
-        int index;
-        for(int j=1;j<players.size();j++){
-            if(order[j]==temp){
-                index=j;break;
-            }
-        }
-        int t=order[index-1];
-        order[index-1]=temp;
-        order[index]=t;
+        int index=find(order.begin(),order.end(),temp)-order.begin();
+        swap(order[index-1],order[index]);
     }
     for(int e:order){
         answer.push_back(players[e]);
