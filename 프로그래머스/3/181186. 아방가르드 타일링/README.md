@@ -1,6 +1,6 @@
 # [level 3] 아방가르드 타일링 - 181186 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181186) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181186#qna) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 04월 05일 23:33:28
+2024년 04월 05일 23:33:36
 
 ### 문제 설명
 
