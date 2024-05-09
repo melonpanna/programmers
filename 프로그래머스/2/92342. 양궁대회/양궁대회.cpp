@@ -10,8 +10,8 @@ bool found=false;
 int maxv=-1;
 int lastindex=-1;
 void dfs(int index,int n,vector<int>& info){
-    //index점짜리를 따내는거임
     int rest=n-(info[10-index]+1);//쳐냈음
+    if(rest<0)return;
     answer[10-index]=info[10-index]+1;
     int temp=0;
     if(rest>0&&index==10){
@@ -20,7 +20,6 @@ void dfs(int index,int n,vector<int>& info){
         rest=0;
     }
     if(rest==0){
-        //계산
         int apeach=0;
         int me=0;
         for(int i=0;i<=10;i++){
@@ -33,9 +32,6 @@ void dfs(int index,int n,vector<int>& info){
                 found=true;
                 maxv=me-apeach;
                 realanswer=vector<int>(answer.begin(),answer.end());
-                // cout<<me-apeach<<' ';
-                // for(int e:realanswer)cout<<e<<' ';
-                // cout<<'\n';
             }
             if(maxv==me-apeach){
                 for(int i=10;i>=0;i--){
@@ -53,7 +49,7 @@ void dfs(int index,int n,vector<int>& info){
         return;
     }
     for(int i=index+1;i<=10;i++){
-        if(rest-(info[10-i]+1)>=0)dfs(i,rest,info);
+        dfs(i,rest,info);
     }
     answer[10-index]=0;
     return;
