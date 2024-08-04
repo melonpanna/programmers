@@ -133,29 +133,9 @@
 </tr>
 </tbody>
       </table>
-<h5>입출력 예 설명</h5>
 
-<p>입출력 예 #1</p>
-
-<p><img src="https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/7b89552b-f7b6-47e7-8bbd-deaf01907f70/rect_5.png" title="" alt="rect_5.png"></p>
-
-<p>캐릭터 위치는 (1, 3)이며, 아이템 위치는 (7, 8)입니다. 위 그림과 같이 굵은 선을 따라 이동하는 경로가 가장 짧습니다.</p>
-
-<p>입출력 예 #2</p>
-
-<p><img src="https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/ac6911d0-e386-472b-a109-2542214c8d6b/rect_6.png" title="" alt="rect_6.png"></p>
-
-<p>캐릭터 위치는 (9, 7)이며, 아이템 위치는 (6, 1)입니다. 위 그림과 같이 굵은 선을 따라 이동하는 경로가 가장 짧습니다.</p>
-
-<p>입출력 예 #3</p>
-
-<p><img src="https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/9c47ca5c-df4b-4b2e-8c5b-faf0815de665/rect_8.png" title="" alt="rect_8.png"></p>
-
-<p>캐릭터 위치는 (1, 1)이며, 아이템 위치는 (4, 7)입니다. 위 그림과 같이 굵은 선을 따라 이동하는 경로가 가장 짧습니다.</p>
-
-<p>입출력 예 #4, #5</p>
-
-<p>설명 생략</p>
-
-
-> 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
+## 🐦 노트
+### 1. 사각형을 2배로 확대해서 좌표 정보를 저장하는 이유
+변의 길이가 1인 사각형이 있을 경우, 사각형의 내부를 표시할 수 없음<br/>
+이 때문에 서로 다른 사각형이 1만큼의 거리를 두고 떨어져 있어도, 좌표 정보만 보면 이어진 선으로 인식할 수 있음<br/>
+ex) ㄷ자로 떨어져 있을 때, 끝 부분끼리 이어진 것으로 인식할 수 있음
